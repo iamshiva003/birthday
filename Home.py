@@ -11,7 +11,7 @@ with load_page.container():
     with open("index.html", encoding="utf8") as source:
         index_page = source.read()
     
-    html(index_page, height=400)
+    html(index_page, height=450)
 
 placeholder = st.empty()
 col1, col2 = st.columns(2)
@@ -53,4 +53,4 @@ if clicked:
     with open("wishes.html", encoding="utf8") as wish:
         wish_page = wish.read()
             
-    html(wish_page, height=1350)
+    html(wish_page, height=1450)
