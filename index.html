@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Changa&family=Fira+Sans&family=Lilita+One&family=Righteous&family=Roboto:wght@100;700&display=swap');
+        body {
+            background-color: #FFF7D4;
+            font-family: 'Lilita One', cursive;
+        }
+
+        h1 {
+            font-size: 75px;
+            color: #4C3D3D;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #C07F00;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #countdown {
+			font-size: 2em;
+			margin-top: 0;
+            text-align: center;
+            color: #4C3D3D;
+		}
+    </style>
+</head>
+<body>
+    <h1>Hi Anushree</h1>
+    <h2>Please wait,your surprise is loading😁😁........</h2>
+    
+    <div id="countdown">10</div>
+
+    <!-- <div class="button-container" id="button-container">
+        <button>
+          <span><a href="hday.html" style="color: inherit">Click me</a></span>
+        </button>
+    </div> -->
+
+
+
+
+	<script>
+		var count = 10;
+		var countdown = setInterval(function() {
+			count--;
+			if (count == 0) {
+				clearInterval(countdown);
+				// window.location.href = "#button-container";
+                document.createElement("button");
+			} else {
+				document.getElementById("countdown").innerHTML = count;
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
