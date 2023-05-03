@@ -53,4 +53,4 @@ if clicked:
     with open("wishes.html", encoding="utf8") as wish:
         wish_page = wish.read()
             
-    html(wish_page, height=1450)
+    html(wish_page, height=1600)
